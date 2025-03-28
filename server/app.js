@@ -38,5 +38,11 @@ app.get("/trips", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server is running at port ${port}`);
+  console.log(`✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
+🌈 🚀 Server is running successfully! 🚀 🌈
+🔹 Port: ${port}
+🔹 Status: Online and ready!
+🔹 Time: ${new Date().toLocaleString()}
+🌟 Happy coding! 💻 ✨
+✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨`);
 });

@@ -1,1 +1,51 @@
 node_modules
+# ไฟล์ระบบ
+.DS_Store
+Thumbs.db
+
+# โฟลเดอร์ dependencies
+/node_modules
+/client/node_modules
+/server/node_modules
+
+# ไฟล์ environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+/client/.env
+/server/.env
+
+# ไฟล์ build และ log
+/build
+/client/build
+/dist
+/client/dist
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ไฟล์ cache
+.cache/
+.parcel-cache/
+.npm
+
+# ไฟล์ coverage
+/coverage
+
+# ไฟล์ IDE และ editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# ไฟล์ debug
+debug.log
+debug.js
+
+# ไฟล์ temporary
+*.tmp
+*.temp
