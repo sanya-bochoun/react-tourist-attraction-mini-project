@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-const Header = ({ onSearch }) => {
+const Header = ({ onSearch, searchText }) => {
   const [searchInput, setSearchInput] = useState("");
-
+  
+  // เมื่อ searchText จาก App เปลี่ยน ให้อัพเดต input ด้วย
+  useEffect(() => {
+    setSearchInput(searchText);
+  }, [searchText]);
+  
   const handleInputChange = (e) => {
     const value = e.target.value;
     setSearchInput(value);

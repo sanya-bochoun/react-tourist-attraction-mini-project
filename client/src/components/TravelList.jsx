@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import TravelCard from './TravelCard';
 import axios from 'axios';
 
-const TravelList = ({ searchText }) => {
+const TravelList = ({ searchText, onTagClick }) => {
   const [travels, setTravels] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -75,6 +75,7 @@ const TravelList = ({ searchText }) => {
               subImages={travel.subImages}
               tags={travel.tags}
               url={travel.url}
+              onTagClick={onTagClick}
             />
           ))}
         </div>
